@@ -5,22 +5,22 @@ export const Faq = () => {
         {
           "id": 1,
           "question": "Why should I use CodeBook?",
-          "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus earum dicta nesciunt, nulla alias consequuntur cumque incidunt saepe mollitia esse! Magni praesentium delectus excepturi nostrum illo repellendus cum eius neque, aperiam dolores quaerat quis dolore magnam doloremque minus sint nemo qui necessitatibus at. Perspiciatis, corrupti cum labore quos odio porro!"
+          "answer": "CodeBook is your all-in-one learning companion designed to help developers grow faster, smarter, and with real-world skills. Whether you're a beginner trying to understand the basics or a seasoned developer looking to sharpen advanced techniques, CodeBook brings value in several key ways CodeBook offers curated content from foundations to advanced levels, covering essential tech stacks like React, Python, JavaScript, Git, and backend development."
         },
         {
           "id": 2,
           "question": "Can I access my eBook on mobile?",
-          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus nobis tempore perferendis qui, quam, atque reprehenderit vero quaerat, assumenda pariatur eveniet. Maxime eaque, neque corrupti ad minus repudiandae consectetur!"
+          "answer": "Yes, absolutely! You can access your eBook on any mobile device — whether you're using an Android phone, iPhone, or tablet. CodeBook is designed with responsive layouts and mobile compatibility in mind, so you can: Read on the go without needing a computer, Resume where you left off, anytime, anywhere, Enjoy a smooth, user-friendly interface optimized for smaller screens. So whether you're commuting, traveling, or just relaxing, your learning never has to stop."
         },
         {
           "id": 3,
           "question": "Do you offer refunds?",
-          "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste dolor deserunt expedita quam fugit et inventore amet pariatur. Animi."
+          "answer": "Refund policies for eBooks vary by platform. Some major eBook retailers like Amazon offer limited refunds, usually within a short time frame (typically 7 days) and under specific conditions (e.g., accidental purchase). Other platforms may have stricter policies and might not allow refunds at all. It's best to check the refund policy of the store where you bought the eBook for accurate details."
         },
         {
           "id": 4,
           "question": "Do you support Internation payments?",
-          "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste dolor deserunt expedita quam fugit et inventore amet pariatur. Animi."
+          "answer": "Yes, we support international payments. Customers from around the world can make purchases using a variety of secure payment methods, including major credit/debit cards and digital wallets. All transactions are processed in your selected currency at checkout."
         }
     ];
     

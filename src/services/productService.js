@@ -5,13 +5,19 @@ export async function getProductList(searchTerm){
     const response = await fetch(`${api}/products?name_like=${searchTerm ? searchTerm : ""}`)
 
     if(!response.ok){
-        throw{message: response.statusText, state: response.status};
+        throw{message: response.statuseText, state: response.status};
     }
 
     const data = await response.json()
-    console.log(data)
+   
+    if (searchTerm){
+        
+        const filteredRsult = data?.filter(item => (item.name.toLowerCase().split("").includes(searchTerm.toLowerCase()) || item.name.toLowerCase().split(" ").includes(searchTerm.toLowerCase())) ||  item.price.toString().toLowerCase().includes(searchTerm) );
+        
+        return filteredRsult
+    }
 
-    return data
+    return data;
 }
 
 

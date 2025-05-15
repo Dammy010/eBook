@@ -6,8 +6,8 @@ const filterInitialState = {
     productList: [],
     onlyInStore: false,
     bestSellerOnly: false,
-    sortBy: "null",
-    ratings: "null",
+    sortBy: null,
+    ratings: null,
 }
 
 export const FilterContext = createContext(filterInitialState);
@@ -30,10 +30,10 @@ export const FilterProvider = ({ children }) => {
     }
     
     const sort = (products) => {
-        if (state.sortBy === "lowToHigh") {
+        if (state.sortBy === "lowtohigh") {
             return products.sort((a, b) => Number(b.price) - Number(a.price))
         }
-        if (state. sortBy === "HighToLow") {
+        if (state. sortBy === "hightolow") {
             return products.sort((a,b) => Number(b.price) - Number(a.price))
         }
         return products
@@ -41,22 +41,25 @@ export const FilterProvider = ({ children }) => {
 
 
     const inStock = (products) => {
-        return state.onlyInStore ? products.filter(product => product.in_stock === true) : products
+        return state.onlyInStock ? products.filter(product => product.in_stock === true) : products;
     }
+
     const ratings = (products) => {
-        if (state.ratings === '4STARABOVE') {
+        if (state.ratings === '4STARSABOVE') {
             return products.filter(product => product.rating >= 4)
-        } if (state.ratings === '3STARABOVE') {
+        } if (state.ratings === '3STARSABOVE') {
             return products.filter(product => product.rating >= 3)
-        } if (state.ratings === '2STARABOVE') {
+        } if (state.ratings === '2STARSABOVE') {
             return products.filter(product => product.rating >= 2)
-        } if (state.ratings === '1STARABOVE') {
+        } if (state.ratings === '1STARSABOVE') {
             return products.filter(product => product.rating >= 1)
-        } else {
-            return products
         }
+            return products
     }
+
     const filterdProductList = ratings(sort(inStock(bestSellerOnly(state.productList))));
+
+    
     const value = {
         state,
         dispatch,
